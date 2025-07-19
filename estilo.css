@@ -1,18 +1,26 @@
 .carta {
-  width: 100%;
+  width: calc(100% - 20px); /* antes eran 40px, ahora solo 10px a cada lado */
   max-width: 480px;
   background-color: white;
   padding: 20px;
+  padding-bottom: 80px;
   border-radius: 20px;
-  margin: 10px;
+  margin: 15px auto; /* antes 30px, ahora la mitad (arriba y abajo) */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  min-height: calc(100vh - 30px); /* también reducido a juego con el nuevo margen */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
+
 h1 {
+  margin: 0 0 20px;
   text-align: center;
   font-size: 2rem;
-  margin: 10px 0 20px;
 }
+
 
 .resaltado {
   background-color: #ffc0cb;
@@ -134,6 +142,7 @@ body {
   margin: 20px 0;
   padding: 0 10px;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .foto-chica {
@@ -153,4 +162,29 @@ body {
   color: #4b2e3b;
   text-align: justify;
   
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.firma {
+  margin: 0;
+  text-align: right;
+  font-size: 1.1rem;
 }
