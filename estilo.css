@@ -7,7 +7,7 @@
   border-radius: 20px;
   margin: 15px auto; /* antes 30px, ahora la mitad (arriba y abajo) */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  min-height: calc(100vh - 30px); /* también reducido a juego con el nuevo margen */
+  min-height: calc(100vh - 70px); /* también reducido a juego con el nuevo margen */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -202,4 +202,57 @@ img {
   margin: 0;
   text-align: right;
   font-size: 1.1rem;
+}
+.firma {
+  position: absolute;
+  bottom: 70px;
+  right: 20px;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  background-color: white; /* opcional */
+  border-radius: 12px;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Corazones arriba izquierda y derecha */
+.firma::before,
+.firma::after {
+  content: "❤️";
+  position: absolute;
+  font-size: 14px;
+  pointer-events: none;
+  text-shadow: 0 0 2px rgba(0,0,0,0.3);
+  top: 5px;
+}
+
+.firma::before {
+  left: 5px;
+  transform: rotate(-25deg);
+}
+
+.firma::after {
+  right: 5px;
+  transform: rotate(25deg);
+}
+
+/* Corazones abajo izquierda y derecha */
+.firma .corazon-inferior-izq,
+.firma .corazon-inferior-der {
+  position: absolute;
+  font-size: 14px;
+  pointer-events: none;
+  text-shadow: 0 0 2px rgba(0,0,0,0.3);
+  bottom: 5px;
+}
+
+.firma .corazon-inferior-izq {
+  left: 5px;
+  transform: rotate(0deg);
+}
+
+.firma .corazon-inferior-der {
+  right: 5px;
+  transform: rotate(0deg);
 }
