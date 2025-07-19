@@ -1,0 +1,72 @@
+body {
+  background-color: #fff0f5;
+  font-family: 'Patrick Hand', cursive;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.carta {
+  width: 100%;
+  max-width: 480px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 0 20px;
+}
+
+.resaltado {
+  background-color: #ffc0cb;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.imagen-top {
+  display: block;
+  width: 80%;
+  max-width: 200px;
+  margin: 0 auto 15px;
+}
+
+.decoracion {
+  display: block;
+  width: 100px;
+  margin: 10px auto;
+}
+
+.firma {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 481px) {
+  .carta {
+    margin: 30px auto;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
