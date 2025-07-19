@@ -95,29 +95,36 @@ p {
 .menu-inferior a:hover {
   transform: scale(1.2);
 }
-.paginacion {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin: 15px auto;
+.titulo-galeria {
+  font-family: 'Comic Sans MS', cursive;
+  color: #ff4f87;
+  text-align: center;
+  margin: 20px 0 10px;
 }
 
-.paginacion a {
-  background-color: #ffc0cb;
-  color: white;
-  padding: 6px 12px;
+.galeria-dos-columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 10px 15px 80px; /* espacio para el nav inferior */
+}
+
+.foto {
+  background: #ffe4ec;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.foto img {
+  width: 100%;
   border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  object-fit: cover;
 }
 
-.paginacion a:hover {
-  background-color: #ff8fb3;
-}
-
-.paginacion .activo {
-  background-color: #ff4f87;
+.foto p {
+  font-size: 14px;
+  color: #c2185b;
+  margin-top: 5px;
 }
